@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100ppx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2em;
+    color: rgb(68, 60, 60);
+    cursor: default;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+span {
+    color: orange;
+}
+
+.navigation a {
+    font-size: 1.1em;
+    color: rgb(68, 60, 60);
+    text-decoration: none;
+    margin-right: 40px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.navigation a:hover {
+    color: orange;
+}
+
+.tombol-download {
+    color: white;
+    text-decoration: none;
+    padding: 8px 35px;
+    background: orange;
+    border-radius: 10px;
+    border:2px solod orange;
+    font-weight: 500;
+    transition: .3s;
+    top:10%;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.tombol-download:hover {
+    color: orange;
+    background: transparent;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(th.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.content {
+    max-width: 500px;
+    color: rgb(68, 60, 60);
+}
+
+.content h2 {
+    font-size: 3em;
+}
+
+.content h4 {
+    font-size: 2em;
+}
+
+.conten p {
+    position: relative;
+    top: 30px
+}
+
+.grup-tombol a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px;
+    background: orange;
+    border-radius: 10px;
+    border: 2px solid orange;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.grup-tombol a:hover:nth-child(1) {
+color: orange;
+background:transparent;
+}
+
+.grup-tombol a:nth-child(2) {
+color:orange;
+background:transparent;
+margin-left: 30px;
+padding: 10px 30px;
+}
+
+.grup-tombol a:hover:nth-child(2) {
+    color: white;
+    background: orange;
+}
+
+.sosmed {
+    position: absolute;
+    bottom: 50px;
+}
+
+.sosmed a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border-radius: 50%;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 40px;
+    outline: 3px solid orange;
+    transition: .3s;
+}
+
+.sosmed a:hover {
+    transform: translateY(-5px);
+}
+
+.sosmed a i {
+    color:  rgb(68, 60, 60);
+    font-size: 20px;
+}
+
+img {
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translate(0, -50%);
+    width: 23%;
+    height: auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(th.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+form,
+input,
+textarea,
+button {
+    font-family: Poppins;
+    font-size: initial;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%; /* Sesuaikan lebar formulir sesuai kebutuhan Anda */
+    max-width: 400px; /* Atur lebar maksimum formulir jika perlu */
+}
+
+.form-group label {
+    display: block;
+    margin: 2rem 0 0.5rem 0;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 1rem 0.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: 0;
+    transition: border 0.15s;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    height: 4.6rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit {
+    background:orange;
+    color: white;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.submit:hover {
+    color: orange;
+    background: transparent;
+}
+
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border: 1px solid ;
+}
+
+/* responsive */
+
+@media screen and (min-width: 576px) {
+    .wrapper {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        width: 55%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .wrapper {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        width: 35%;
+    }
+}

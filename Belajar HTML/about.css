@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100ppx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2em;
+    color: rgb(68, 60, 60);
+    cursor: default;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+span {
+    color: orange;
+}
+
+.navigation a {
+    font-size: 1.1em;
+    color: rgb(68, 60, 60);
+    text-decoration: none;
+    margin-right: 37px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.navigation a:hover {
+    color: orange;
+}
+
+.tombol-download {
+    color: white;
+    text-decoration: none;
+    padding: 8px 35px;
+    background: orange;
+    border-radius: 10px;
+    border:2px solod orange;
+    font-weight: 500;
+    transition: .3s;
+    top:10%;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.tombol-download:hover {
+    color: orange;
+    background: transparent;
+}
+
